@@ -7,9 +7,11 @@ function Section1() {
     <Container>
       <Title>Buy, Sell, & Trade <br /> the tokens of your fav content creators</Title>
       <Menu>
+        <Link2 href='https://rok-market-app.vercel.app/'>
         <LiveMenu>
           <Text>App</Text>
         </LiveMenu>
+        </Link2>
         <Link href='https://twitter.com/ADNL__'>
         <UpdateMenu>
           <Text>Daily updates</Text>
@@ -41,6 +43,14 @@ const Link = styled.a`
   width: 65%;
 `; 
 
+const Link2 = styled.a`
+    background: transparent;
+  text-decoration: none;
+  color: none;
+  width: auto;
+  width: 35%;
+`;
+
 const Title = styled.text`
   font-family: abril fatface; 
   background: transparent; 
@@ -59,7 +69,7 @@ const Menu = styled.div`
 
 const LiveMenu = styled.div`
   height: 60px; 
-  width: 35%; 
+  width: 100%; 
   background: red;
   border-radius: 100px;
   background: #3B3395;
