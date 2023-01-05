@@ -29,23 +29,35 @@ function Section3() {
 export default Section3
 
 const Container = styled.div`
-  margin-top: 550px;
+  margin-top: 350px;
   width: 100vw; 
   height: auto;
   padding-left: 100px;
   display: flex;
   position: relative;
   padding-bottom: 30px;
+  background: transparent;
+  @media(max-width: 947px) {
+    margin-top: 560px;
+    padding-left: 30px;
+  }
+  @media(max-width: 837px) {
+    margin-top: 620px;
+  }
 `; 
 
 const Link = styled.a``;
 
 const Wrapper = styled.div`
   position: absolute; 
-  background: transparents; 
+  background: transparent; 
   display: flex; 
   flex-direction: column;
   right: 160px;
+  @media(max-width: 947px) {
+    right: 80px;
+    align-items: center;
+  }
 `;
 
 const Cadre = styled.div`
@@ -55,6 +67,9 @@ const Cadre = styled.div`
   background: #3B3395;
   position: relative;
   padding: 50px;
+  @media(max-width: 847px) {
+    margin-top: 200px;
+  }
 `;
 
 const Image = styled.img`
@@ -69,16 +84,22 @@ const Title = styled.text`
   font-family: abril fatface;
   font-size: 60px;
   color: #827136;
+  @media(max-width: 947px) {
+    font-size: 8vw;
+  }
 `; 
 
 const Wrap = styled.div`
   display: flex; 
   flex-direction: row;
   font-family: Roboto Mono; 
+  //justify-content: start;
   font-weight: 400; 
   font-size: 22px;
   margin-top: 10px;
   color: #909090;
+  background: transparent;
+  
 `; 
 
 const BottomWrap = styled.div`
@@ -93,6 +114,9 @@ const BottomWrap = styled.div`
   margin-right: auto;
   border-radius: 400px;
   padding: 20px;
+  @media(max-width: 846px) {
+    margin-top: 720px;
+  }
 `; 
 
 const Containe = styled.div`
@@ -119,10 +143,16 @@ const Button = styled.div`
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
   }
+  @media(max-width: 665px ) {
+    width: 100%;
+  }
 `; 
 
 const Call = styled.text`
   font-family: abril-fatface; 
   font-size: 8vw; 
   background: transparent;
+  @media(max-width: 665px) {
+    font-size: 12vw;
+  }
 `; 

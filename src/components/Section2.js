@@ -14,10 +14,6 @@ function Section2() {
       <Wrap>Earn fees on each transaction</Wrap>
       </Wrapper>
       <Square />
-      <Cadre>
-        <Image src="../assets/monalisa.png"/>
-        <Glasses>ROK ROK</Glasses>
-      </Cadre>
     </Container>
   )
 }
@@ -30,6 +26,11 @@ const Container = styled.div`
   height: auto;
   margin-top: 150px;
   padding: 30px;
+  display: flex;
+  @media(max-width: 947px) {
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 const Cadre = styled.div`
@@ -60,6 +61,9 @@ const Title = styled.text`
   font-family: abril fatface;
   font-size: 60px;
   color: #827136;
+  @media(max-width: 947px) {
+    font-size: 8vw;
+  }
 `; 
 
 const Subtitle = styled.text`
@@ -70,6 +74,9 @@ const Subtitle = styled.text`
   color: #525151;
   @media(max-width: 1144px) {
     font-size: 2vw;
+  }
+  @media(max-width: 947px) {
+    font-size: 4vw;
   }
 `; 
 
@@ -87,6 +94,9 @@ const Wrap = styled.div`
   font-size: 22px;
   margin-top: 10px;
   color: #909090;
+  @media(max-wdith: 947px) {
+    align-items: center;
+  }
 `; 
 
 const Glasses = styled.text`

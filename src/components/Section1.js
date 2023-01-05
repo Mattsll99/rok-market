@@ -8,7 +8,7 @@ function Section1() {
       <Title>Buy, Sell, & Trade <br /> the tokens of your fav content creators</Title>
       <Menu>
         <LiveMenu>
-          <Text>Live demo</Text>
+          <Text>App</Text>
         </LiveMenu>
         <Link href='https://twitter.com/ADNL__'>
         <UpdateMenu>

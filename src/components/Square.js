@@ -26,7 +26,9 @@ function Square() {
 export default Square
 
 const Container = styled.div`
-  width: 500px; 
+  //width: 500px; 
+  width: 40vw;
+  //height: 40vw;
   height: 500px;
   background: transparent;
   border: solid 3px #3B3395;
@@ -38,6 +40,14 @@ const Container = styled.div`
   flex-direction: column;
   padding: 30px;
   //margin-top: 300px;
+  @media(max-width: 947px) {
+    top: 360px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 90vw;
+  }
 `;
 
 const Row = styled.div`
